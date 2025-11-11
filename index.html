@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>José Gonçalves</title>
+
+  <link rel="icon" type="image/x-icon" href="./images/icon.ico" />
+  <!-- Estilos -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"rel="stylesheet"/></head>
+
+<body>
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <nav class="navbar container">
+      <a href="../index.html" class="nav__logo">
+        <img src="../images/logo.ico" alt="image" />
+        <span>José Gonçalves</span>
+      </a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li><a href="../index.html" class="nav__link">Home</a></li>
+          <li><a href="../pages/about.html" class="nav__link">Sobre</a></li>
+          <li><a href="../pages/polity.html" class="nav__link">Politica</a></li>
+          <li><a href="../pages/sport.html" class="nav__link">Esporte</a></li>
+          <li><a href="../pages/education.html" class="nav__link">Educação</a></li>
+          <li><a href="../pages/outhers.html" class="nav__link">Outros</a></li>
+        </ul>
+
+        <div class="nav__close" id="nav-close">
+          <i class="bx bx-x"></i>
+        </div>
+      </div>
+
+      <div class="nav__buttons">
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+
+  <!-- ===== MAIN ===== -->
+  <main class="main">
+    <section class="home section" id="home">
+      <img src="./images/subprefeitura.jpeg" alt="image" class="home__bg" />
+      <div class="home__blur"></div>
+
+      <div class="home__container container grid">
+        <!-- Texto -->
+        <div class="home__data">
+          <h1 class="home__tittle">Distrito de José Gonçalves</h1>
+          <p class="home__description">
+            Pouco mais de 24 quilômetros separam a Praça Tancredo Neves, local que marca a batalha que deu origem ao município de Vitória da Conquista, de um de seus mais antigos e importantes distritos: José Gonçalves. Popularmente conhecido como “Guigó” – em referência à grande presença de macacos guigós (Callicebus Coimbrai) no passado – o distrito possui hoje aproximados seis mil setessentos e vinte e dois habitantes, segundo censo realizado em 2022 pelo Instituto Brasileiro de Geografia e Estatística (IBGE).
+          </p>
+
+          <a href="./pages/about.html" class="button button__opa-30">
+            Saiba mais!
+            <i class="bx bx-right-arrow-alt"></i>
+          </a>
+        </div>
+         <div class="home__swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <h4 class="subtitle">Igreja Matriz</h4>
+              <img src="./images/praca2" alt="image" class="home__image" />
+                </div>
+
+                <div class="swiper-slide">
+              <h4 class="subtitle">Ponto de embarque</h4>
+              <img src="./images/praca4.jpg" alt="image" class="home__image" />
+                </div>
+
+                <div class="swiper-slide">
+              <h4 class="subtitle">Praça da feira</h4>
+              <img src="./images/praca3.jpg" alt="image" class="home__image" />
+                </div>
+
+                <div class="swiper-slide">
+              <h4 class="subtitle">Rua Texas</h4>
+              <img src="./images/praca5.png" alt="image" class="home__image" />
+                </div>
+            </div>
+
+           
+        </div>
+    </section>
+
+    <section class="temperatura" id="temperatura">
+      <h2>Temperatura atual:</h2>
+      <p id="dados-temperatura">Carregando...</p>
+    </section>
+    </main>
+
+    
+  <footer class="footer">
+    <h4>© 2025 Distrito de José Gonçalves — Todos os direitos reservados.</h4>
+    <div class="login-icon" onclick="toggleLoginModal()">
+  <i class="fa-solid fa-user"></i>
+  <span>Dev</span>
+</div>
+
+  <!-- Mini Janela / Modal -->
+  <div id="login-modal" class="login-modal">
+  <div class="login-content">
+    <span class="close-btn" onclick="toggleLoginModal()">&times;</span>
+    <h2>Sobre o Desenvolvedor</h2>
+    <p>
+      Desenvolvido por <strong>Igor Souza dos Santos</strong>, filho de <strong>Fátima</strong>, nascido e criado em <strong>José Gonçalves</strong>.<br>
+      Concluí meu <strong>ensino fundamental</strong> e <strong>médio</strong> nas escolas da própria comunidade, o que fortaleceu ainda mais meu vínculo com o distrito.<br>
+      Sou <strong>Técnico em Informática</strong> e <strong>Analista de Sistemas </strong>e <strong>Desenvolvedor junior javascript e python</strong> com foco em desenvolvimento web, automação e inovação.
+    </p>
+
+  </div>
+  </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/a2d9d6e9a4.js" crossorigin="anonymous"></script>
+  <script src="./js/include.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./temperatura.js"></script>
+</body>
+</html>
